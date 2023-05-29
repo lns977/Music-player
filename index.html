@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/010f4e9612.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+    <div class="musicplayer">
+        <nav>
+            <div class="circle">
+                <i class="fa-solid fa-angle-left"></i>
+            </div>
+            <div class="circle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+        <img src="data:image/png;base64,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" class="song-img" alt="Songimage">
+        <h1>Song Name</h1>
+        <p>Artist Name</p>
+
+
+        <!-- <audio controls id="song">  --> <!-- Before  the main interfeace there was default control of song which is commented so that it wont show.-->
+            <audio  id="song"> <!--on removing the control the default control is deleted -->
+            <source src="/WhatsApp Audio 2023-01-30 at 8.01.48 PM.mpeg"  type="audio/mpeg">
+        </audio>
+        <input type="range" value="0" id="progress">
+
+
+
+
+        <div class="controls">
+            <div>
+                <i class="fa-solid fa-backward"></i>
+            </div>
+            <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+            <DIV><i class="fa-solid fa-forward"></i></DIV>
+            
+        </div>
+    </div>
+</div>
+    <script>
+        let progress=document.getElementById("progress");
+        let song= document.getElementById("song");
+        let ctrlIcon=document.getElementById("ctrlIcon");
+
+        song.onloadedmetadata=function(){
+            progress.max = song.duration();
+            progress.value = song.currentTime();
+
+        }
+        function playPause(){
+            if(ctrlIcon.classList.contains("fa-pause")){
+                song.pause();
+                ctrlIcon.classList.remove("fa-pause");
+                ctrlIcon.classList.add("fa-play");
+            }
+            else{
+                song.play();
+                ctrlIcon.classList.add("fa-pause");
+                ctrlIcon.classList.remove("fa-play");
+            }
+        }
+
+        if(song.play()){
+            setInterval(()=>{ progress.value=song.currentTime},100);
+        }
+
+        progress.onchange=function(){
+            song.play();
+            song.currentTime = progress.value;
+            ctrlIcon.classList.add("fa-pause");
+            ctrlIcon.classList.remove("fa-play");
+        }
+    </script>
+</body>
+</html>
